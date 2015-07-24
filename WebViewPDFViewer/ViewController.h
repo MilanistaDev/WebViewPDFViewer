@@ -2,7 +2,7 @@
 //  ViewController.h
 //  WebViewPDFViewer
 //
-//  Created by SDT-B003 on 2015/07/23.
+//  Created by Takuya Aso on 2015/07/23.
 //  Copyright © 2015年 Takuya Aso. All rights reserved.
 //
 

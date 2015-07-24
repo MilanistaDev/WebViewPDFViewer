@@ -13,6 +13,9 @@
 		FB797AB31B60EEB100BA52C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB797AB11B60EEB100BA52C9 /* Main.storyboard */; };
 		FB797AB51B60EEB100BA52C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB797AB41B60EEB100BA52C9 /* Assets.xcassets */; };
 		FB797AB81B60EEB100BA52C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB797AB61B60EEB100BA52C9 /* LaunchScreen.storyboard */; };
+		FB797AC41B60EFBD00BA52C9 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = FB797AC31B60EFBD00BA52C9 /* Reachability.m */; };
+		FB797ACB1B60EFD100BA52C9 /* CustomButton.m in Sources */ = {isa = PBXBuildFile; fileRef = FB797AC71B60EFD100BA52C9 /* CustomButton.m */; };
+		FB797ACC1B60EFD100BA52C9 /* CheckNetWork.m in Sources */ = {isa = PBXBuildFile; fileRef = FB797ACA1B60EFD100BA52C9 /* CheckNetWork.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,12 @@
 		FB797AB41B60EEB100BA52C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB797AB71B60EEB100BA52C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FB797AB91B60EEB100BA52C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB797AC21B60EFBD00BA52C9 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		FB797AC31B60EFBD00BA52C9 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		FB797AC61B60EFD100BA52C9 /* CustomButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomButton.h; sourceTree = "<group>"; };
+		FB797AC71B60EFD100BA52C9 /* CustomButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomButton.m; sourceTree = "<group>"; };
+		FB797AC91B60EFD100BA52C9 /* CheckNetWork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckNetWork.h; sourceTree = "<group>"; };
+		FB797ACA1B60EFD100BA52C9 /* CheckNetWork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckNetWork.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +67,11 @@
 		FB797AA71B60EEB100BA52C9 /* WebViewPDFViewer */ = {
 			isa = PBXGroup;
 			children = (
-				FB797AAB1B60EEB100BA52C9 /* AppDelegate.h */,
-				FB797AAC1B60EEB100BA52C9 /* AppDelegate.m */,
-				FB797AAE1B60EEB100BA52C9 /* ViewController.h */,
-				FB797AAF1B60EEB100BA52C9 /* ViewController.m */,
-				FB797AB11B60EEB100BA52C9 /* Main.storyboard */,
+				FB797ABF1B60EECF00BA52C9 /* Controllers */,
+				FB797AC01B60EEDE00BA52C9 /* Views */,
+				FB797ACD1B60F1E400BA52C9 /* Utils */,
+				FBD3AD431B61D28300AD2539 /* Libs */,
 				FB797AB41B60EEB100BA52C9 /* Assets.xcassets */,
-				FB797AB61B60EEB100BA52C9 /* LaunchScreen.storyboard */,
 				FB797AB91B60EEB100BA52C9 /* Info.plist */,
 				FB797AA81B60EEB100BA52C9 /* Supporting Files */,
 			);
@@ -77,6 +84,72 @@
 				FB797AA91B60EEB100BA52C9 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FB797ABF1B60EECF00BA52C9 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FB797AAB1B60EEB100BA52C9 /* AppDelegate.h */,
+				FB797AAC1B60EEB100BA52C9 /* AppDelegate.m */,
+				FB797AAE1B60EEB100BA52C9 /* ViewController.h */,
+				FB797AAF1B60EEB100BA52C9 /* ViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		FB797AC01B60EEDE00BA52C9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FB797AB11B60EEB100BA52C9 /* Main.storyboard */,
+				FB797AB61B60EEB100BA52C9 /* LaunchScreen.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		FB797AC11B60EFBD00BA52C9 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				FB797AC21B60EFBD00BA52C9 /* Reachability.h */,
+				FB797AC31B60EFBD00BA52C9 /* Reachability.m */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
+		FB797AC51B60EFD100BA52C9 /* CustomButton */ = {
+			isa = PBXGroup;
+			children = (
+				FB797AC61B60EFD100BA52C9 /* CustomButton.h */,
+				FB797AC71B60EFD100BA52C9 /* CustomButton.m */,
+			);
+			name = CustomButton;
+			path = Reachability/CustomButton;
+			sourceTree = "<group>";
+		};
+		FB797AC81B60EFD100BA52C9 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				FB797AC91B60EFD100BA52C9 /* CheckNetWork.h */,
+				FB797ACA1B60EFD100BA52C9 /* CheckNetWork.m */,
+			);
+			name = Network;
+			path = Reachability/Network;
+			sourceTree = "<group>";
+		};
+		FB797ACD1B60F1E400BA52C9 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				FB797AC51B60EFD100BA52C9 /* CustomButton */,
+				FB797AC81B60EFD100BA52C9 /* Network */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		FBD3AD431B61D28300AD2539 /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				FB797AC11B60EFBD00BA52C9 /* Reachability */,
+			);
+			name = Libs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,7 +223,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB797AB01B60EEB100BA52C9 /* ViewController.m in Sources */,
+				FB797ACB1B60EFD100BA52C9 /* CustomButton.m in Sources */,
 				FB797AAD1B60EEB100BA52C9 /* AppDelegate.m in Sources */,
+				FB797ACC1B60EFD100BA52C9 /* CheckNetWork.m in Sources */,
+				FB797AC41B60EFBD00BA52C9 /* Reachability.m in Sources */,
 				FB797AAA1B60EEB100BA52C9 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -264,6 +340,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WebViewPDFViewer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ASTK.WebViewPDFViewer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -275,6 +352,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WebViewPDFViewer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ASTK.WebViewPDFViewer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -300,6 +378,7 @@
 				FB797ABE1B60EEB100BA52C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
