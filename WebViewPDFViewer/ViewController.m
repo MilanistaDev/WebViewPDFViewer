@@ -49,6 +49,10 @@
 
 - (void)firstSetUp {
     
+    // delegate を自分自身
+    
+    _pdfViewerWebView.delegate = self;
+    
     // WebView にフィットさせる
     _pdfViewerWebView.scalesPageToFit = YES;
     
