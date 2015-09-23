@@ -50,7 +50,6 @@
 - (void)firstSetUp {
     
     // delegate を自分自身
-    
     _pdfViewerWebView.delegate = self;
     
     // WebView にフィットさせる
@@ -93,7 +92,6 @@
     // ページ数取得
     _numberOfPages= CGPDFDocumentGetNumberOfPages(_document);
     _numberOfPagesLabel.text = [NSString stringWithFormat:@"%ld", _numberOfPages];
-    
 }
 
 /**
@@ -183,6 +181,18 @@
         [alert addButtonWithTitle:@"OK"];
         [alert show];
     }
+}
+
+#pragma mark - UIWebView Delegate
+
+// ページ読込開始時：インジケータ
+-(void)webViewDidStartLoad:(UIWebView*)webView{
+    [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
+}
+
+// ページ読込完了時：インジケータを非表示
+-(void)webViewDidFinishLoad:(UIWebView*)webView{
+    [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
 }
 
 #pragma mark - Memory Warning
