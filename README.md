@@ -1,9 +1,9 @@
 # WebViewPDFViewer
-When you tap next button, PDF page go forward.
-WebView で PDF を表示。2つのボタン押下でページめくり実装。
+When you tap next button, PDF page go forward.  
+WebView で PDF を表示。2つのボタン押下でページめくり実装。  
 
-**If you have some trouble(Xcode7), please re-input ATS setting. **
-もしPDFが表示されない場合は Xcode 7 で再度 ATS の設定をやり直せば動きます。
+**If you have some trouble(Xcode7), please re-input ATS setting. **  
+もしPDFが表示されない場合は Xcode 7 で再度 ATS の設定をやり直せば動きます。  
 
 Xcode 6
 
